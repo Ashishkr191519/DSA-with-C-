@@ -42,17 +42,28 @@ int main(){
     // itreator kese bnate hai or use 
     // konse vector par bnane hai iterrator -> vector <int>
     // iterator ka naame 'a' rahega;
-    // iterator kaha point kr raha hai ans vector ke starting mai
-    vector<int>::iterator a = ans.begin();
-    // looping kese krte hai isse
+    // // iterator kaha point kr raha hai ans vector ke starting mai
+    // vector<int>::iterator a = ans.begin();
+    // // looping kese krte hai isse
 
-    while (a != ans.end())
-    {
-        /* code */
-        cout << *a <<" " <<endl;
-        a++;
-    }
-    
-   
+    // while (a != ans.end())
+    // {
+    //     /* code */
+    //     cout << *a <<" " <<endl;
+    //     a++;
+    // }
+    // 2d array kaise bnate hai vector ke through
+// this is vector with same coloumn 
+   vector<vector<int>>ans(4,vector<int>(5,0));
+   int totalRow = ans.size();
+   int totalColoumn = ans[0].size();
     return 0;
+
+
+// Now we will make a new vector with each row has diffrenet number of coloums -> Jacked array
+
+vector<vector<int>>ans2(4);
+ans2[0] = vector<int>(5);
+ans2[1] =vector<int>(2),
+ans[2] =vector<int>(3)
 }
